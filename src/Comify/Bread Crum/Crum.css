@@ -28,9 +28,19 @@
   text-align: center;
 }
 
-.right {
-  --_d: 100%;
-  border-right: var(--t) solid #0000;
-  margin-left: var(--t);
-  place-self: end;
+.bubble {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  right: 60%;
+}
+
+.b2 {
+  width: 10px;
+  height: 10px;
+  right: 58%;
+  top: 15%;
 }
