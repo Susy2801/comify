@@ -4,12 +4,15 @@
   right: 0;
 }
 
+.crum__container:hover {
+  animation: shake 0.3s infinite;
+}
+
 .crum__img {
   width: 300px;
 }
 
 .crum__img:hover {
-  animation: shake 0.3s infinite; /* Tạo hiệu ứng rung liên tục */
 }
 
 .crum__text {
