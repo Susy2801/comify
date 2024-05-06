@@ -39,7 +39,7 @@ function RightBar() {
       </div>
     );
   } else {
-    return <div>LOADING...</div>;
+    return <div>Loading</div>;
   }
 }
 

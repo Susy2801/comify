@@ -1,11 +1,13 @@
 .crum__container {
   position: fixed;
-  top: 72%;
+  top: 93%;
   right: 0;
+  transition: 0.4s;
 }
 
 .crum__container:hover {
-  animation: shake 0.3s infinite;
+  animation: shake 0.8s infinite;
+  top: 72%;
 }
 
 .crum__img {

@@ -68,3 +68,29 @@
   padding: 10px 0;
   text-decoration: none;
 }
+
+.ads {
+  color: white;
+  width: 40%;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  position: fixed;
+  z-index: 4;
+}
+
+.ads img {
+  width: 100%;
+}
+
+.close__btn {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  cursor: pointer;
+}
+
+.close__btn i {
+  color: red;
+}
