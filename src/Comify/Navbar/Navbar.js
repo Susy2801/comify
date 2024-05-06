@@ -12,6 +12,7 @@ function Navbar() {
   const [category, setCategory] = useState([]);
   const [searchData, setSearchData] = useState([]);
   const [overviewHeight, setOverviewHeight] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   const categoryAPI = `https://otruyenapi.com/v1/api/the-loai`;
   const searchApi = `https://otruyenapi.com/v1/api/tim-kiem?keyword=${search}`;
 
@@ -27,11 +28,12 @@ function Navbar() {
   }, [categoryAPI]);
 
   useEffect(() => {
+    setIsLoading(true);
     async function searchOverview() {
       const response = await fetch(searchApi);
       const data = await response.json();
       setSearchData(data.data.items);
-      console.log(data);
+      setIsLoading(false);
     }
 
     searchOverview();
@@ -111,15 +113,21 @@ function Navbar() {
           />
 
           <div className="overview__search" style={{ height: overviewHeight }}>
-            {searchData.map((comic, index) => (
-              <div key={index} className="search__info">
-                <img
-                  className="overview__img"
-                  src={`https://img.otruyenapi.com/uploads/comics/${comic.thumb_url}`}
-                />
-                <div className="overview__name">{comic.name}</div>
+            {isLoading ? (
+              <div className="load__container">
+                <div class="loader"></div>
               </div>
-            ))}
+            ) : (
+              searchData.map((comic, index) => (
+                <div key={index} className="search__info">
+                  <img
+                    className="overview__img"
+                    src={`https://img.otruyenapi.com/uploads/comics/${comic.thumb_url}`}
+                  />
+                  <div className="overview__name">{comic.name}</div>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>
