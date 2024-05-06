@@ -4,6 +4,7 @@ import Navbar from "./Comify/Navbar/Navbar";
 import HomePage from "./Comify/Home Page/Home";
 import ReadPage from "./Comify/Reading/Read";
 import SearchPage from "./Comify/Search/Search";
+import Crum from "./Comify/Bread Crum/Crum";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/read/:id" element={<ReadPage />} />
         <Route path="/search/:id" element={<SearchPage />}></Route>
       </Routes>
+      <Crum />
     </div>
   );
 }

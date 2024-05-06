@@ -1,0 +1,36 @@
+.crum__container {
+  position: fixed;
+  top: 72%;
+  right: 0;
+}
+
+.crum__img {
+  width: 300px;
+}
+
+.crum__text {
+  color: black;
+  position: absolute;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 12px;
+  width: 70px;
+  height: 70px;
+  top: -30px;
+  right: 60%;
+  background-color: white;
+  padding: 5px;
+  border: 1px dotted black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.right {
+  --_d: 100%;
+  border-right: var(--t) solid #0000;
+  margin-left: var(--t);
+  place-self: end;
+}
