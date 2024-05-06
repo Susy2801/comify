@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./Comify/Navbar/Navbar";
+import HomePage from "./Comify/Home Page/Home";
+import ReadPage from "./Comify/Reading/Read";
+import SearchPage from "./Comify/Search/Search";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/read/:id" element={<ReadPage />} />
+        <Route path="/search/:id" element={<SearchPage />}></Route>
+      </Routes>
     </div>
   );
 }

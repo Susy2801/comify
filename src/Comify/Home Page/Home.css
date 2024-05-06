@@ -1,0 +1,98 @@
+.main__banner {
+  width: 100%;
+  object-fit: cover;
+}
+
+.home__container {
+  display: flex;
+}
+
+/* News Comic */
+.slide {
+  margin-top: 10px;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.home__page {
+  padding-top: 20px;
+  width: 70%;
+  background-color: rgb(41, 41, 41);
+  font-family: "Nunito";
+  /* margin-top: 110px; */
+  border-right: 1px solid rgba(128, 128, 128, 0.76);
+}
+
+.slide__title {
+  color: aliceblue;
+  font-weight: 700;
+  padding: 0 10px;
+  margin-left: 10px;
+  border-left: 4px solid yellow;
+  border-radius: 1px;
+}
+.home__img {
+  object-fit: cover;
+  height: 200px;
+  width: 140px;
+  border-radius: 7px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.home__img:hover {
+  transform: scale(105%);
+  filter: brightness(60%);
+}
+
+.update__time {
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 5px;
+  color: rgba(240, 248, 255, 0.571);
+}
+
+.read__btn {
+  margin-top: 7px;
+  padding: 7px 9px;
+  color: aliceblue;
+  text-decoration: none;
+  background-color: red;
+  font-size: 12px;
+  border-radius: 7px;
+}
+
+.comic__name {
+  text-decoration: none;
+  color: aliceblue;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.comic__name:hover {
+  color: rgb(255, 77, 77);
+}
+
+.read__btn:hover {
+  background-color: rgb(255, 84, 84);
+}
+
+.slick {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.76);
+  padding-bottom: 20px;
+}
+
+/* Done Comic */
+.done__comic {
+  margin-top: 20px;
+}

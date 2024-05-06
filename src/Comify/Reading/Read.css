@@ -1,0 +1,7 @@
+.comic__container {
+  display: flex;
+}
+
+.comic__info {
+  width: 50%;
+}

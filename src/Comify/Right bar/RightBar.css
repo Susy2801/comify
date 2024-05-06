@@ -1,0 +1,70 @@
+/* ==========SIDE BAR============== */
+
+.side__container {
+  width: 100%;
+  background-color: rgb(41, 41, 41);
+  font-family: "Nunito";
+  /* margin-top: 110px; */
+}
+
+.side__title {
+  color: aliceblue;
+  font-weight: 700;
+  padding: 0 10px;
+  margin-left: 10px;
+  border-left: 4px solid yellow;
+  border-radius: 1px;
+  margin-top: 20px;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  grid-auto-flow: row;
+  grid-gap: 15px;
+  padding: 15px;
+}
+
+.category {
+  color: aliceblue;
+  text-align: center;
+  background-color: black;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: 1px solid whitesmoke;
+}
+
+.comming__comic {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.comming__img {
+  object-fit: cover;
+  height: 150px;
+  width: 100px;
+  border-radius: 7px;
+  transition: 0.3s ease;
+}
+
+.comming__img:hover {
+  transform: scale(105%);
+  filter: brightness(60%);
+}
+
+.comming__comic a {
+  color: aliceblue;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+}
