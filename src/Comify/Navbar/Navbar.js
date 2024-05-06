@@ -66,6 +66,10 @@ function Navbar() {
     setOverviewHeight("600px");
   }
 
+  function overViewNavigate(slug) {
+    navigate(`/read/${slug}`, { replace: true });
+    setSearch("");
+  }
   return (
     <div className="navbar__container">
       <div className="navigation">
@@ -88,7 +92,7 @@ function Navbar() {
               style={{ height: categoryHeight, padding: categoryPadding }}
             >
               {category.map((type, index) => (
-                <div>{type.name}</div>
+                <div key={index}>{type.name}</div>
               ))}
             </div>
           </div>
@@ -119,7 +123,11 @@ function Navbar() {
               </div>
             ) : (
               searchData.map((comic, index) => (
-                <div key={index} className="search__info">
+                <div
+                  key={index}
+                  className="search__info"
+                  onClick={(e) => overViewNavigate(comic.slug)}
+                >
                   <img
                     className="overview__img"
                     src={`https://img.otruyenapi.com/uploads/comics/${comic.thumb_url}`}

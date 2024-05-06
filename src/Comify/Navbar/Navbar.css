@@ -49,13 +49,14 @@
 .category__box {
   width: 500px;
   font-family: "Nunito";
-  background-color: aliceblue;
-  color: black;
+  background-color: rgb(68, 68, 68);
+  color: aliceblue;
   border-radius: 7px;
   position: absolute;
+  top: 20px;
   z-index: 3;
   transition: 0.3s all ease;
-  overflow: hidden;
+  overflow: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   grid-auto-flow: row;
