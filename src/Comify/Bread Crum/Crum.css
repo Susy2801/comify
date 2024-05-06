@@ -8,6 +8,10 @@
   width: 300px;
 }
 
+.crum__img:hover {
+  animation: shake 0.3s infinite; /* Tạo hiệu ứng rung liên tục */
+}
+
 .crum__text {
   color: black;
   position: absolute;
@@ -43,4 +47,22 @@
   height: 10px;
   right: 58%;
   top: 15%;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  75% {
+    transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
 }
