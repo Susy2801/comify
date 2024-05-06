@@ -109,6 +109,10 @@
   color: aliceblue;
 }
 
+.search__info:hover {
+  background-color: rgb(28, 28, 28);
+  cursor: pointer;
+}
 .overview__img {
   width: 100px;
   height: 70px;
