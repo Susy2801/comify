@@ -1,7 +1,114 @@
 .comic__container {
+  width: 100%;
+  height: 100%;
+  padding-top: 110px;
+  background-color: rgba(41, 41, 41, 0.775);
+  backdrop-filter: blur(10px);
+  color: aliceblue;
+  font-family: "Nunito";
   display: flex;
 }
 
+.comic__main--info {
+  flex-grow: 1;
+}
+
 .comic__info {
-  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  height: 400px;
+  border-bottom: 1px white solid;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.info__img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.info__title {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 25px;
+}
+
+.read__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.read__author {
+  font-size: 17px;
+}
+
+.read__author span {
+  color: rgba(240, 248, 255, 0.766);
+}
+
+.read__updateTime {
+  color: rgba(240, 248, 255, 0.596);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+  padding-bottom: 15px;
+}
+
+.info__category {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+
+.each__category:first-child {
+  padding-right: 7px;
+}
+
+.each__category:not(:first-child) {
+  padding: 0px 7px;
+}
+
+.each__category:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+/* MORE INFORMATION */
+.more__info {
+}
+
+.more__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  border-bottom: 1px white solid;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.tab {
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 7px;
+  transition: 0.3s all ease;
+  border: none;
+}
+
+.tab:hover {
+  color: rgba(240, 248, 255, 0.656);
+}
+
+.tabs__info {
+  padding: 20px 10px;
+}
+
+.tab__2 h3 {
+  font-size: 18px;
+  line-height: 1.5em;
+  color: aliceblue;
 }

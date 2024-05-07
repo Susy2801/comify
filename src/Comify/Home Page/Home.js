@@ -1,5 +1,6 @@
 import "./Home.css";
 import { useState } from "react";
+import "./Ads.css";
 import RightBar from "../Right bar/RightBar";
 import NewsComic from "./NewsComic";
 import DoneComic from "./DoneComic";

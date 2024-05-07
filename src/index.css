@@ -8,7 +8,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(41, 41, 41);
+  background-image: url(/src/Comify/Asset/Bg\ wal.webp);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {

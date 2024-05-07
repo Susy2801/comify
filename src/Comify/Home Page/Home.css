@@ -38,10 +38,11 @@
 .home__page {
   padding-top: 20px;
   width: 70%;
-  background-color: rgb(41, 41, 41);
+  background-color: rgba(41, 41, 41);
   font-family: "Nunito";
   /* margin-top: 110px; */
   border-right: 1px solid rgba(128, 128, 128, 0.76);
+  flex-grow: 1;
 }
 
 .slide__title {
@@ -73,16 +74,6 @@
   color: rgba(240, 248, 255, 0.571);
 }
 
-.read__btn {
-  margin-top: 7px;
-  padding: 7px 9px;
-  color: aliceblue;
-  text-decoration: none;
-  background-color: red;
-  font-size: 12px;
-  border-radius: 7px;
-}
-
 .comic__name {
   text-decoration: none;
   color: aliceblue;
@@ -97,11 +88,7 @@
 }
 
 .comic__name:hover {
-  color: rgb(255, 77, 77);
-}
-
-.read__btn:hover {
-  background-color: rgb(255, 84, 84);
+  color: rgb(248, 125, 145);
 }
 
 .slick {
