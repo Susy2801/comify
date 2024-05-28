@@ -19,7 +19,7 @@ function HomePage() {
       <div className="banner__container">
         <img alt="banner" src={Banner} className="main__banner banner" />
       </div>
-      <div className="ads" style={{ display: close }}>
+      {/* <div className="ads" style={{ display: close }}>
         <div
           className="close__btn"
           onClick={() => {
@@ -31,7 +31,7 @@ function HomePage() {
         <img alt="ads" src={ads1} />
         <img alt="ads" src={ads2} />
         <img alt="ads" src={ads3} />
-      </div>
+      </div> */}
       <div className="home__container">
         <div className="home__page">
           <NewsComic />
